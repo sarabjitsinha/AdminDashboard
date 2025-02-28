@@ -1,7 +1,8 @@
 import "./home.css"
 import Topchart from "./Topchart";
 import Chartbox from "./chartbox";
-import { chartBoxUser,chartBoxProduct,chartBoxRevenue,chartBoxConversion } from "../utils/data";
+import BarChartbox from "./BarChartbox";
+import { chartBoxUser,chartBoxProduct,chartBoxRevenue,chartBoxConversion,barChartBoxVisit,barChartBoxRevenue } from "../utils/data";
 
 
 
@@ -17,8 +18,8 @@ function Home(){
             <div className="box box5"><Chartbox {...chartBoxRevenue}/></div>
             <div className="box box6"><Chartbox {...chartBoxConversion}/></div>
             <div className="box box7">Box 7</div>
-            <div className="box box8">Box 8</div>
-            <div className="box box9">Box 9</div>
+            <div className="box box8"><BarChartbox {...barChartBoxVisit}/></div>
+            <div className="box box9"><BarChartbox {...barChartBoxRevenue}/></div>
         </div>
 
     )
