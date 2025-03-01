@@ -9,7 +9,7 @@ import "./header.css"
 function Header(){
     return (
         <header >
-            <div className="flex bg-gray-700 justify-between sticky">
+            <div className="flex bg-gray-700 justify-between">
             <span className="text-white"><img src={logo} className="inline"/>Sarabjit</span>
                 <div className="flex flex-wrap gap-4">
                     <img src={search} alt="" />

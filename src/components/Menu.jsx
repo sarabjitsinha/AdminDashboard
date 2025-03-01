@@ -9,7 +9,7 @@ function Menu(){
             {menu.map((item)=>{
                 return(
                     <ol key={item.id} >
-                        <li className=" mb-4">{item.title}</li>
+                        <li className="mb-4">{item.title}</li>
                      {item.listItems.map((listitem)=>{
                         return(
                             <div key={listitem.id}>
